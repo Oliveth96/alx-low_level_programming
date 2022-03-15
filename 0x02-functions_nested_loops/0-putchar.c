@@ -1,21 +1,12 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * main - putchar
- *
- * _putchar print the characters given
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	char text[9] = "_putchar";
+int _putchar(char c);
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
 
-
-		int i = 0;	
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(text[i]);
-	}
-	_putchar('\n');
-	return (0);
-}		
+#endif
