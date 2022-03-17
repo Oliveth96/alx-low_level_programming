@@ -7,7 +7,7 @@
  * Description: Function that adds two intergers and returns the result
  * Result: Result to add a and b
  */
-int add(int a, int b);
+int add(int a, int b)
 {
 	return (a + b);
 }
