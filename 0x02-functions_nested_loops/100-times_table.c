@@ -13,7 +13,7 @@ void print_times_table(int n)
 
 	if (n < 0 || n > 15)
 		return;
-	
+
 	while (x <= n)
 	{
 		for (y = 0; y <= n; y++)
