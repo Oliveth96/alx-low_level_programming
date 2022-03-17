@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * main - print _putchar
+ * main - putchar
  *
- * Description: print _putchar
- *
- * Return: 0 on (Success)
+ * _putchar print the characters given
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-char text[9] = "int_putchar";
-
-		int i = 0;
-
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(text[i]);
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 	return (0);
 }
