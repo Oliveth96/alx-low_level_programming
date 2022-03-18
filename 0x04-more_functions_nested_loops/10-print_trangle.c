@@ -5,7 +5,7 @@
  * @size: size of the pyramid.
  * Return: void.
  */
-void print_traingle(int size)
+void print_triangle(int size)
 {
 	int a, b;
 	
