@@ -7,7 +7,7 @@
  */
 void print_number(int n)
 {
-	int temp, temp2, cnt, div, result, i;
+	int  temp, temp2, cnt, div, result, i;
 
 	cnt = 0;
 	div = 1;
@@ -33,7 +33,7 @@ void print_number(int n)
 			div *= 10;
 			--temp2;
 		}
-		for (i = 0; i < cnt; ++1)
+		for (i = 0; i < cnt; ++i)
 		{
 			result = n / div;
 			if (result < 0)
