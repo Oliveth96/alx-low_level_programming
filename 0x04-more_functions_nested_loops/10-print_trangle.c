@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_triangle - pyramid of a # print to the screen given the input size
+ * print_triangle - pyramid of # print to the screen given the input size
  * @size: size of the pyramid.
  * Return: void.
  */
 void print_triangle(int size)
 {
 	int i, j;
-	
+
 	if (size <= 0)
 		_putchar('\n');
 
