@@ -4,7 +4,7 @@
  * print_rev - print reverse
  * @s: input string
  *
- * Description: prints a string, in reverse
+ * Description:  prints a string, in reverse
  * Return: Always (0)
  */
 
@@ -25,4 +25,3 @@ void print_rev(char *s)
 	}
 	_putchar('\n');
 }
-
