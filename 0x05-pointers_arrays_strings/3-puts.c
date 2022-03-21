@@ -8,7 +8,7 @@
  * Return: Always (0)
  */
 
-void _puts(char *str)
+void _put(char *str)
 {
 	while (*str != '\0')
 	{
