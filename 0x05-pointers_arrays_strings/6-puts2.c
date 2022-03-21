@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * puts2 - print character
+ * puts2 - print characte
  * @str: input string
  *
- * Decsription: prints character of a string, starting first character
+ * Description: prints character of a string, starting first character
  * Return: Always (0)
  */
 
