@@ -1,25 +1,29 @@
 #include "main.h"
 
 /**
- * leet - using only one "if" statement chnage into leet speak
- * @str: string to be turned into leet speak
+ * leet - encode string
+ * @str: input string
  *
- * Return: augmented string.
+ * Description: encodes a string into 1337 
+ * Return: Always (0)
  */
+
 char *leet(char *str)
 {
-	int a, b;
+	int i = 0, k;
+	char s[] = "aAeEoOtTlL";
+	char s1[] = "4433007711";
 
-	char arr1[] = "aAeEoOtTlL";
-	char arr2[] = "4433007711";
-
-	for (a = 0; str[a] != '\0'; ++a)
+	for (; str[i] != '\0'; i++)
 	{
-		for (b = 0; b < 10; ++b)
+		for (k = 0; k <= 9; k++)
 		{
-			if (str[a] == arr1[b])
-				str[a] = arrr2[b];
+			if (s[k] == str[i])
+			{
+				str[i] = s1[k];
+			}
 		}
 	}
 	return (str);
 }
+
