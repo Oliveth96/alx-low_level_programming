@@ -27,7 +27,7 @@ char *cap_string(char *str)
 
 	for (a = 0; str[a] != '\0'; ++a)
 	{
-		if (a == 0 && str[a] >= 'a' && str[i] <= 'z')
+		if (a == 0 && str[a] >= 'a' && str[a] <= 'z')
 			str[a] -= 32;
 		else if (is_punc(str[a - 1]) && str[a] >= 'a' && str[a] <= 'z')
 			str[a] -= 32;
