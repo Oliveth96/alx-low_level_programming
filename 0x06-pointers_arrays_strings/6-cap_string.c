@@ -18,19 +18,19 @@ int is_punc(char cha)
 }
 /**
  * cap_string - captilizes the first letter of every word.
- * @s: is the input string to be augmented.
+ * @str: is the input string to be augmented.
  * Return: the changed string.
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
 	int a;
 
-	for (a = 0; s[a] != '\0'; ++a)
+	for (a = 0; str[a] != '\0'; ++a)
 	{
-		if (a == 0 && s[a] >= 'a' && s[a] <= 'z')
-			s[a] -=32;
-		else if (is_punc(s[a - 1]) && s[a] >= 'a' && s[a] <= 'z')
-			s[a] -=32;
+		if (a == 0 && str[a] >= 'a' && str[a] <= 'z')
+			str[a] -=32;
+		else if (is_punc(str[a - 1]) && str[a] >= 'a' && str[a] <= 'z')
+			str[a] -=32;
 	}
-	return (s);
+	return (str);
 }
