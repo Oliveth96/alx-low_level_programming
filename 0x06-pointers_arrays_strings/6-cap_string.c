@@ -9,7 +9,7 @@ int is_punc(char cha)
 {
 	if (cha == '.' || cha == ',' || cha == ' ' || cha == '\t' || cha == '\n')
 		return (1);
-	if (cha -- '!' || cha == '?' || cha == ';')
+	if (cha == '!' || cha == '?' || cha == ';')
 		return (1);
 	if (cha == ')' || cha == '(' || cha == '{' || cha == '}')
 		return (1);
