@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * rot13 - encode string
- * @str: input string
+ * rot13 - encode string  you rot 13 so move 13 spaces.
+ * @str: string to be encoded
  *
- * Description: encodes a string using rot13
- * Return: Always (0)
+ * Return: encoded string.
  */
-
 char *rot13(char *str)
 {
-	int i = 0, j;
-	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char s1[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int a, b;
+	char arr1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char arr2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (; str[i] != '\0'; i++)
+
+	for (a = 0; str[a] != '\0'; ++a)
 	{
-		for (j = 0; j <= 51; j++)
+		for (b = 0; b < 52; ++b)
 		{
-			if (s[j] == str[i])
+			if (str[a] == arr1[b])
 			{
-				str[i] = s1[j];
+				str[a] = arr2[b];
+				break;
 			}
 		}
 	}
