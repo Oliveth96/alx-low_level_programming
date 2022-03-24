@@ -7,7 +7,7 @@
  */
 int is_punc(char cha)
 {
-	if (cha == '.' || cha == ',' || cha == ' ' || cha == '\t' || cha == '\n')
+	if (cha == '.' || cha == ',' || cha == ' ' || cha == '\t' || ch == '\n')
 		return (1);
 	if (cha == '!' || cha == '?' || cha == ';')
 		return (1);
@@ -27,10 +27,10 @@ char *cap_string(char *str)
 
 	for (a = 0; str[a] != '\0'; ++a)
 	{
-		if (a == 0 && str[a] >= 'a' && str[a] <= 'z')
-			str[a] -=32;
+		if (a == 0 && str[a] >= 'a' && str[i] <= 'z')
+			str[a] -= 32;
 		else if (is_punc(str[a - 1]) && str[a] >= 'a' && str[a] <= 'z')
-			str[a] -=32;
+			str[a] -= 32;
 	}
 	return (str);
 }
