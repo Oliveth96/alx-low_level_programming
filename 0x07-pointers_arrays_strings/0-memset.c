@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - fills memory
+ * _memset - fill memory
  * @s: input string
  * @b: input character
  * @n: input size
