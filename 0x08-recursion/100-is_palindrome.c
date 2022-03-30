@@ -18,7 +18,7 @@ int str_len(char *s)
 }
 
 /**
- * is_palindrome - checks for a palindrome
+ * check_palindrome - checks for a palindrome
  * @s: input character
  * @i: an interator
  * @len: string length indicator
