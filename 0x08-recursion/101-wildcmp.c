@@ -52,7 +52,7 @@ void iterate_wild(char **wildstr)
  * null type located at the end of the postfix.
  * Otherwise - a pointer to the first unmatched character in postfix.
  */
-char *postfix _match(char *str, char *postfix)
+char *postfix_match(char *str, char *postfix)
 {
 	int str_len = strlen_no_wilds(str) - 1;
 	int postfix_len = strlen_no_wilds(postfix) - 1;
