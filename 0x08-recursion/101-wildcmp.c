@@ -58,7 +58,7 @@ char *postfix_match(char *str, char *postfix)
 	int postfix_len = strlen_no_wilds(postfix) - 1;
 
 	if (*postfix == '*')
-		iterate__wild(&postfix);
+		iterate_wild(&postfix);
 
 	if (*(str + str_len - postfix_len) == *postfix && *postfix != '\0')
 	{
