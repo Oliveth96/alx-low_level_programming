@@ -9,7 +9,7 @@
  * Return: returns the input val
  */
 
-int _is_square_root(int x, int y)
+int is_square_root(int x, int y)
 {
 	if (y * y > x)
 	{
