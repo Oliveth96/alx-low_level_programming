@@ -10,12 +10,12 @@ char *move(char *s2);
  * @s2: second string to compare
  *
  * Return: (1) if the strings can be considered identical
- * otherwisw (0)
+ * otherwise (0)
  */
 int wildcmp(char *s1, char *s2)
 {
 	/**
-	 * this is going to be a sum of vallues
+	 * this is going to be a sum of values
 	 */
 	int sum = 0;
 
@@ -24,9 +24,7 @@ int wildcmp(char *s1, char *s2)
 	 * and if the next cars of s2 are *, return (1)
 	 */
 	if (*s1 == '\0' && *s2 == '*' && !*move(s2))
-	{
 		return (1);
-	}
 
 	/**
 	 * if the chars are equal in both strings,
@@ -48,7 +46,7 @@ int wildcmp(char *s1, char *s2)
 
 	/**
 	 * if the char in s2 is a *
-	 * find the address of the first char after the *
+	 * finds the address of the first char after the *
 	 * if we reached the end of s2, return (1)
 	 * if the chars are equal, and the return values
 	 * of wildcmp() to sum
@@ -69,7 +67,8 @@ int wildcmp(char *s1, char *s2)
 }
 
 /**
- * bandersnatch - checks recursively for all the paths when the characters are equal
+ * bandersnatch - checks recursively for all the paths when the
+ * characters are equal
  * @s1: first string
  * @s2: second string
  *
@@ -104,12 +103,7 @@ char *move(char *s2)
 	 * the first char past all *
 	 */
 	if (*s2 == '*')
-	{
 		return (move(s2 + 1));
-	}
 	else
-	{
 		return(s2);
-	}
 }
-
