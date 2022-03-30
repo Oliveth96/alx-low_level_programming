@@ -19,7 +19,7 @@ int is_square_root(int x, int y)
 	{
 		return (y);
 	}
-	return (is_square_root_(x, y + 1));
+	return (is_square_root(x, y + 1));
 }
 
 /**
