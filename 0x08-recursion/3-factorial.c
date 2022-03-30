@@ -4,7 +4,7 @@
  * factorial - print factorial
  * @n: input number
  * Description: returns the factorial of a given number
- * Retrun: returns factorial
+ * Return: returns factorial
  */
 int factorial(int n)
 {
