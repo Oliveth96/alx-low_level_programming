@@ -23,6 +23,6 @@ int main(int argc, char *argv[])
 		sec_num = _atoi(argv[2]);
 	}
 	product = first_num * sec_num;
-	printf("%d\n", result);
+	printf("%d\n", product);
 	return (0);
 }
