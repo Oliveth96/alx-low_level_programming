@@ -7,8 +7,8 @@
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: If the number of arguments is not one -1. 
- * Otherwise 0
+ * Return: If the number of arguments is not one - 1. 
+ * Otherwise - 0
  */
 int main(int argc, char *argv[])
 {
