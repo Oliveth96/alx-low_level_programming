@@ -4,7 +4,7 @@
 /**
  * main - adds all positive numbers and prints it
  * @argc: argument count
- * @argv: arument vector
+ * @argv: argument vector
  * Return: (0) for success
  */
 
