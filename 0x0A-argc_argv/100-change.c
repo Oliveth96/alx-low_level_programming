@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * calculate_cents - calculates and returns cents
+ * calculate_cents - calculates and return cents
  * @num: input params
  * Return: coins
  */
@@ -39,7 +39,8 @@ int calculate_cents(int num)
 }
 
 /**
- * main - prints the minimum number of coins to make change fr an amount of money
+ * main - prints the minimum number of coins to make 
+ * change for an amount of money
  * @argc: amount of arguement
  * @argv: an array pf inputs from argc
  *
