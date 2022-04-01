@@ -8,13 +8,14 @@
  * @argv: argument vector
  * Return: (0) if no errors
  */
+
 int main(int argc, char *argv[])
 {
 	int i, first_num, sec_num, product;
 
 	if (argc != 3)
 	{
-		return (printf("Erro\n"), 1);
+		return (printf("Error\n"), 1);
 	}
 	for (i = 0; i < argc; i++)
 	{
