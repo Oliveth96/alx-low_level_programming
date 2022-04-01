@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
- * main - multiples two numbers
+ * main - multiplies two arguments and prints result
  * @argc: argument count
  * @argv: argument vector
  * Return: (0) if no errors
@@ -19,8 +18,8 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < argc; i++)
 	{
-		first_num = _atoi(argv[1]);
-		sec_num = _atoi(argv[2]);
+		first_num = atoi(argv[1]);
+		sec_num = atoi(argv[2]);
 	}
 	product = first_num * sec_num;
 	printf("%d\n", product);
