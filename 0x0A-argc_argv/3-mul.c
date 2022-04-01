@@ -6,9 +6,9 @@
  * main - multiples two numbers
  * @argc: argument count
  * @argv: argument vector
- *
  * Return: (0) if no errors
  */
+
 int main(int argc, char *argv[])
 {
 	int i, first_num, sec_num, product;
