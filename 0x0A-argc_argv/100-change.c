@@ -2,11 +2,13 @@
 #include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins to make chnage for an amount of money
+ * main - prints the minimum number of coins to 
+ * make change for an amount of money
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: If the number of arguments is not one -1. otherwise 0
+ * Return: If the number of arguments is not one -1. 
+ * Otherwise 0
  */
 int main(int argc, char *argv[])
 {
@@ -22,7 +24,7 @@ int main(int argc, char *argv[])
 
 	while (cents > 0)
 	{
-		coins ++;
+		coins++;
 		if ((cents - 25) >= 0)
 		{
 			cents -= 25;
