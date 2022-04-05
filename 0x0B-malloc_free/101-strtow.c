@@ -10,7 +10,7 @@
  */
 int count_word(char *s)
 {
-	int flag a, b;
+	int flag, a, b;
 
 	flag = 0;
 	b = 0;
