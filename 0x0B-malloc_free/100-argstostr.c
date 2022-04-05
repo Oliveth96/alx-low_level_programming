@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 int _strlen(char *s)
+
 /**
  * argstostr - concantenates all the arguments
  * @c: input params
