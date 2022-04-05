@@ -5,7 +5,7 @@
 /**
  * free-gird - frees thememory allocated for the grid
  * created by alloc_grid()
- * @grid: the address of the two dimensional grids
+ * @grid: grid to free
  * @height: height of the grid
  *
  * Description: print_chessboard
