@@ -1,56 +1,64 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
+int _strlen(char *s)
 /**
  * argstostr - concantenates all the arguments
  * @c: input params
- * @v: input params:
+ * @v: array of all arguments
+ * Each argument should be followed by a \n in the new string
  *
- * Return: nothing.
+ * Return: pointer to resulting string
+ * returns NULL if ac == 0 or av == NULL
+ * returns NULL if it fails
  */
-
 char *argstostr(int ac, char **av)
 {
-	int ch = 0, a = 0, b = 0, c = 0;
-	char *s;
+	int length = 0;
+	int i, j;
+	int k = 0;
+	char *str;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	while (a < ac)
-	{
-		while (av[a][b])
-		{
-			ch++;
-			b++;
-		}
+	for (i = 0; i < ac; i++)
+		length += _strlen(av[i]);
 
-		b = 0;
-		a++;
+	str = malloc(sizeof(char) * (length + ac + 1));
+	if (str == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++, k++)
+			str[k] = av[i][j];
+
+		str[k] = '\n';
+		k++;
 	}
 
-	s = malloc((sizeof(char) * ch) + ac + 1);
+	str[k] = '\0';
 
-	a = 0;
-	while (av[a])
+	return (str);
+}
+
+/**
+ * _strlen - finds the length of a string
+ * @s: address of dirst character in the string
+ *
+ * Return: length of the string
+ */
+int _strlen(char *s)
+{
+	int length = 0;
+
+	while (*s)
 	{
-		while (av[a][b])
-		{
-			s[c] = av[a][b];
-			c++;
-			b++;
-		}
-
-		s[c] = '\n';
-
-		b = 0;
-		c++;
-		a++;
+		length++;
+		s++;
 	}
 
-	c++;
-	s[c] = '\0';
-	return (s);
+	return (length);
 }
