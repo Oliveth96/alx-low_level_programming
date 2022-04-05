@@ -3,15 +3,11 @@
 #include <stdlib.h>
 
 /**
- * free-gird - frees thememory allocated for the grid
+ * free_grid - frees thememory allocated for the gris
  * created by alloc_grid()
  * @grid: grid to free
  * @height: height of the grid
- *
- * Description: print_chessboard
- * Return: Nothing.
  */
-
 void free_grid(int **grid, int height)
 {
 	int i;
@@ -22,5 +18,5 @@ void free_grid(int **grid, int height)
 	for (i = 0; i < height; i++)
 		free(grid[i]);
 
-	free(grid);
+	free (grid);
 }
