@@ -10,7 +10,7 @@
  * Return: returns NULL on failure
  */
 
-it **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **arr;
 	int i;
@@ -27,7 +27,7 @@ it **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < height; i++)
 	{
-		ar[i] = malloc(width * sizeof(int));
+		arr[i] = malloc(width * sizeof(int));
 	}
 	if (arr != NULL)
 	{
