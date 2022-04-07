@@ -3,10 +3,11 @@
 #include <stdlib.h>
 
 /*
- * string_nconcat - concatenates two strings using at most an inputed number of bytes.
+ * string_nconcat - concatenates two strings using at most an 
+ * inputed number of bytes.
  * @s1: The first string.
  * @s2: The second string.
- * @s3: The maximun number of bytes of s2 to concatenate s1.
+ * @n: The maximun number of bytes of s2 to concatenate s1.
  *
  * Return: If the function fails - NULL.
  * Otherwise - a pointer to the concatenated space in memory.
