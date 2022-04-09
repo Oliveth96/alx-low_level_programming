@@ -20,7 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 != NULL)
 	{
 		while (s1[len1] != '\0')
-			len++;
+			len1++;
 	} else
 	{
 		len1 = 0;
@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			len2++;
 	} else
 	{
-		len 2 = 0;
+		len2 = 0;
 	}
 	1 = len2 > n ? n : len2;
 	new_str = malloc((len1 + 1 + 1) * sizeof(*new_str));
