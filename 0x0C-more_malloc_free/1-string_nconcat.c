@@ -6,12 +6,11 @@
  * inputed number of bytes.
  * @s1: The first string.
  * @s2: The second string.
- * @n: The maximun number of bytes of s2 to concatenate s1.
+ * @n: numer of characters to take from the second string
  *
- * Return: If the function fails - NULL.
- * Otherwise - a pointer to the concatenated space in memory.
+ * Return: a pointer to the new concatined string
  */
-char *string_nconcat(char *s2, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new_str;
 	unsigned int l, i, j;
