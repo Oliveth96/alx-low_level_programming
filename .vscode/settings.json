@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
         "calloc",
+        "malloc",
+        "nconcat",
         "realloc"
     ]
 }
