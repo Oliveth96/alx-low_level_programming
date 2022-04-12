@@ -5,18 +5,15 @@
 /**
  * print_dog - prints a struct dog.
  * @d: The struct dog to be printed
- * @name: The name f the dog
- * @age: The age of the dog
- * @owner: The owner of the dog
  *
  * Return: Nothing
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void print_dog(struct dog *d)
 {
 	if (d != NULL)
 	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
+		printf("Name: %s\n", (d->name) ? d->name : "(nil)");
+		printf("Age: %f\n", (d->age) ? d->age : 0);
+		printf("Owner: %s\n", (d->onwer) ? d->owner : "(nil)");
 	}
 }
