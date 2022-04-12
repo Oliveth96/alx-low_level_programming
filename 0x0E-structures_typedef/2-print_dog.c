@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_dog - prints a struct dog.
+ * print_dog - prints all the dtat of a dog 
  * @d: The struct dog to be printed
  *
  * Return: Nothing
