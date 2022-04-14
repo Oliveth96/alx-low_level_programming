@@ -11,7 +11,7 @@
 typedef struct printer
 {
 	char *symbol;
-	void (*print)(char *symbol, va_list arg);
+	void (*print)(char *seperator, va_list args);
 
 } print_dt;
 
