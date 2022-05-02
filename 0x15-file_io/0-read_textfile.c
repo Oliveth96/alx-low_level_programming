@@ -8,7 +8,7 @@
  * @letters: size letters
  * Description: Write a function that reads a text file and prints it 
  * to the POSIX standard output 
- * Return: The actual number of letters it could read and print, o otherwise
+ * Return: The actual number of letters it could read and print, 0 otherwise
  */
 
 ssize_t read_textfile(const char *filename, size_t letters);
@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters);
     if (filename == NULL)
         return (0);
 
-    file = open(filename, o_RDONLY);
+    file = open(filename, 0_RDONLY);
 
     if (file == -1)
     {
@@ -37,5 +37,5 @@ ssize_t read_textfile(const char *filename, size_t letters);
 
     close(file)
 
-    return(w);
+    return (w);
 }
