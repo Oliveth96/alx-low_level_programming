@@ -9,7 +9,7 @@
  * Return: always 0 
  */
 
-int main (int ac, char **av)
+int main(int ac, char **av)
 {
     return (0);
 }
