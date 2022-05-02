@@ -4,7 +4,7 @@
 
 /**
  * create_file - function that creates a file
- * @filename: varaiable pointer
+ * @filename: variable pointer
  * @text_content: content file
  * Description: create a function that creates a file
  * Result: 1 on success, -1 on failure
