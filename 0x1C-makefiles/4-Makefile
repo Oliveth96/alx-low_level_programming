@@ -1,21 +1,25 @@
 # This is a complete Makefile with
 # rules and variables
 
-CC=gcc
-SRC=main.c school.c
-CFLAGS= -Wall -Werror -Wextra -pedantic
-OBJ=$(SRC:%.c=%.o)
-NAME=schoool
-RM=rm
+NAME = school
+
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = main.c school.c
+OBJ = $(patsubst %.c, %.o, $(SRC))
+
+TMPFILES = *~
+
+RM = rm -f
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
-
-oclean:
-	$(RM) -f $(OBJ)
+	$(CC) $^ -o $(NAME)
 
 clean:
-	$(RM) -f *~ $(NAME)
+	$(RM) $(NAME) $(TMPFILES)
+
+oclean:
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
