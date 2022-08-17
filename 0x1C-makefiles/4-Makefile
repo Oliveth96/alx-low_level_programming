@@ -1,0 +1,21 @@
+# This is a complete Makefile with rules and variables
+
+CC=gcc
+SRC=main.c school.c
+CFLAGS= -Wall -Werror -Wextra -pedantic
+OBJ=$(SRC:%.c=%.o)
+NAME=schoool
+RM=rm
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+oclean:
+	$(RM) -f $(OBJ)
+
+clean:
+	$(RM) -f *~ $(NAME)
+
+fclean: clean oclean
+
+re: oclean all
